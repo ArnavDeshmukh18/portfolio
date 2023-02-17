@@ -53,9 +53,9 @@ export const projects=[
     id:1,
     title:"Image Gallery",
     discription:"Image Gallery is website for uploading Images. Built using MERN Stack",
-    usedTech1:"React Js",
-    usedTech2:"Express Js",
-    usedTech3:"Mongo DB",
+    usedTech1:"ReactJs",
+    usedTech2:"ExpressJs",
+    
 
   },
   {
@@ -64,7 +64,7 @@ export const projects=[
     discription:"Crypto App built using React Js. Gives real time value of crypto data with feature of search",
     usedTech1:"React Js",
     usedTech2:"REST API",
-    usedTech3:"CSS",
+   
 
   },
   {
@@ -73,7 +73,7 @@ export const projects=[
     discription:"Climate App built using Flutter . Gives real time value of Climate data.",
     usedTech1:"Flutter",
     usedTech2:"REST API",
-    usedTech3:"",
+  
 
   },
   {
