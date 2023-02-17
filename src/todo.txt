@@ -1,0 +1,4 @@
+//about
+//top margin in about section 
+//img width
+//font-width
