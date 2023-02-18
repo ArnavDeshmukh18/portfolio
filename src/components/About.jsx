@@ -6,7 +6,7 @@ const About = () => {
 
    console.log(about);
   return (
-   <section className='bg-primary flex flex-col md:my-11  '>
+   <section  id="about"  className='bg-primary flex flex-col md:my-11  '>
     <div className='text-white'>
      <h1 className='font-poppins font-bold text-[42px] text-center md:text-left'>About</h1>
     </div>

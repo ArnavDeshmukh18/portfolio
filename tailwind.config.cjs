@@ -12,7 +12,8 @@ module.exports = {
         buttonText:"#34AEE6",
         aboutText:"#BAC8CA",
         cardBackground:"#112240",
-        cardText:"#A3ADCC"
+        cardText:"#A3ADCC",
+        footer:"#204482"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

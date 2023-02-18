@@ -1,8 +1,13 @@
 import React from "react";
 import { experienceDetail } from "../constants";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Experience = () => {
+  React.useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section className="bg-primary ">
+    <section id="experience" className="bg-primary my-12">
       <div className="text-white">
         <h1 className="font-poppins font-bold text-[42px] text-center md:text-left py-9">
           Experience
@@ -13,6 +18,7 @@ const Experience = () => {
           <div
             class="block md:w-[75%] p-6 bg-white border justify-center border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 md:text-center my-10"
             key={details.id}
+            data-aos="fade-right"
           >
             <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-start">
               <h5 className="mb-2 text-2xl font-bold text-gradient tracking-tight text-gray-900 dark:text-gradient">

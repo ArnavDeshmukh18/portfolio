@@ -10,11 +10,11 @@ const Home = () => {
    //  }, [])
 
  return(
-    <section className='flex flex-col md:flex-row items-center justify-between my-11 '>
+    <section id='home' className='flex flex-col md:flex-row items-center justify-between my-11 '>
 
       <div className='text-white text-center md:text-left'>
          <div>
-            <h1   className='font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px ]'>
+            <h1   className='font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px ]' >
                <span className='text-gradient'>
                   Arnav
                </span>
