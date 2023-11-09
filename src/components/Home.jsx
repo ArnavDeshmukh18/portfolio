@@ -50,11 +50,11 @@ const Home = () => {
  
       </div>
 
-      <div className='flex-1 flex  justify-center items-start mx-7 md:my-0 my-10 relative'>
+      <div className='flex-1 flex  justify-center items-start mx-7 md:my-0 my-10 relative '>
           <img src={profile} alt="profile" className=' sm:w-[55%] h-[100%] relative z-[5]' />  
-             <div className="absolute z-[0] w-[20%] h-[30%] top-0 pink__gradient" />
-            <div className="absolute z-[1] w-[100%] h-[100%] rounded-full white__gradient bottom-40" />
-            <div className="absolute z-[0] w-[100%] h-[100%] right-20 bottom-20 blue__gradient" />
+             <div className="absolute z-[0] w-[30%] h-[100%] top-0 pink__gradient" />
+            <div className="absolute z-[1] w-[30%] h-[100%] rounded-full white__gradient bottom-40" />
+            <div className="absolute z-[0] w-[30%] h-[100%] right-20 bottom-20 blue__gradient" />
     
       </div>
 
@@ -66,48 +66,3 @@ export default Home
 
 
 
-
-
-{/* <section id='home' className='flex flex-col md:flex-row justify-between items-center md:items-start '>
-
-<div className='flex flex-col justify-center items-center md:items-start'>
-   <h1 className='flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px ]'>
-      <span className='text-gradient'>
-         Arnav
-
-      </span>
-      <br className='sm:block hidden'/>{" "}
-      <span className='text-gradient'>
-         Deshmukh
-      </span>
-
-   </h1>
-
-
-   <div className="flex flex-row  justify-between  items-center w-full">
-
-<h1  className=" flex-1 font-poppins  ss:font-semibold   ss:text-[42px] text-[22px] text-white ss:leading-[100px] leading-[75px ] " >
-<span></span>
-<span className='text-white '>
-Developer
-</span>
-
-
-</h1>
-
-
-
-
-</div>
-
-
-
-</div>
-
-
-<img src={profile} alt="profile" className='w-[45%] h-[100%] relative z-[5]' />            
-         
-
-
-  
-</section> */}

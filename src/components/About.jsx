@@ -10,7 +10,7 @@ const About = () => {
     <div className='text-white'>
      <h1 className='font-poppins font-bold text-[42px] text-center md:text-left'>About</h1>
     </div>
-    <div className='text-aboutText flex flex-col md:flex-row  items-center  text-[18px] my-10 text-center md:text-left space-x-10 pr-7'>
+    <div className='text-aboutText flex flex-col md:flex-row  items-center  text-[18px] my-10 text-center md:text-left space-x-10 pr-7 '>
     <div className='w-[100%] sm:w-[55%] md:w-[125%] pl-9'>
         <AboutAnimation/>
        </div>

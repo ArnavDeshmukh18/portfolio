@@ -1,12 +1,40 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { folder, github, redirect } from '../assets/index'
-import { projects } from '../constants'
+
+import { addDoc,getDocs, collection,arrayUnion, doc, updateDoc } from "firebase/firestore";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { db } from '../firebase/Firebase';
 
 const Projects = () => {
 
+ const [loading, setLoading] = useState(false);
+ const [projects,setProjects]=useState([]);
+ const [techstack,setTechStack]=useState([]);
+    const projectCollectionRef = collection(db, "projects");
+    const getProductList = async () => {
+      try {
+          const data = await getDocs(projectCollectionRef);
+          setLoading(true);
+
+          const filteredData = data.docs.map((doc) => ({
+              ...doc.data(),
+              id: doc.id,
+          }));
+       
+
+          setProjects(filteredData);
+          setLoading(false);
+          console.log(filteredData)
+          setTechStack(filteredData.techstack)
+          console.log(techstack)
+      } catch (err) {
+          console.error(err);
+      }
+  };
+   
   React.useEffect(() => {
+    getProductList();
     AOS.init();
   }, [])
   return (
@@ -17,7 +45,7 @@ const Projects = () => {
       </div>
 
 
-      <div className=' flex  flex-wrap items-center'>
+      <div className=' flex  flex-wrap items-center h-[100%]'>
         {
           projects.map((project) => (
 
@@ -30,10 +58,12 @@ const Projects = () => {
               </div>
               <div className='text-white text-start flex flex-col gap-5'>
                 <h1 className='font-bold text-[1.4rem] '>{project.title}</h1>
-                <p className=''>{project.discription}</p>
+                <p className='text-bold'>{project.discription}</p>
                 <div className='flex flex-row gap-4 '>
-                  <span>{project.usedTech1}</span>
-                  <span>{project.usedTech2}</span>
+              
+<span>{project.techstack}</span>
+                   
+                  
                   
                 </div>
 

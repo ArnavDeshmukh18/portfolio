@@ -1,9 +1,36 @@
-import React from "react";
-import { experienceDetail } from "../constants";
+import React,{useState} from "react";
+
+import { addDoc,getDocs, collection,arrayUnion, doc, updateDoc } from "firebase/firestore";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { db } from "../firebase/Firebase";
 const Experience = () => {
+  const [loading, setLoading] = useState(false);
+ const [experienceDetail,setexperienceDetail]=useState([]);
+ 
+    const projectCollectionRef = collection(db, "experienceDetail");
+    const getProductList = async () => {
+      try {
+          const data = await getDocs(projectCollectionRef);
+          setLoading(true);
+
+          const filteredData = data.docs.map((doc) => ({
+              ...doc.data(),
+              id: doc.id,
+          }));
+       
+
+          setexperienceDetail(filteredData);
+          setLoading(false);
+          console.log(filteredData)
+         
+      } catch (err) {
+          console.error(err);
+      }
+  };
+   
   React.useEffect(() => {
+    getProductList();
     AOS.init();
   }, [])
   return (
@@ -25,14 +52,16 @@ const Experience = () => {
                 {details.title}
               </h5>
 
-              <p className="font-normal text-gray-700 dark:text-gray-400 py-4">
+              <p className="font-normal text-gray-700 dark:text-gray-400 py-4 font-poppins">
                 {details.duration}
               </p>
             </div>
             <div>
-              <p className="text-white text-center md:text-start  text-[18px]">
-                {details.description}
-              </p>
+             
+              {
+                details.description.map((dis)=>( <p className="text-white text-center md:text-start  text-[18px]">{dis} </p>))
+              }
+             
              
             </div>
 

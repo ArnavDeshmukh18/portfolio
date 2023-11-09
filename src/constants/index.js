@@ -28,69 +28,29 @@ export const about="I'm an undergrad engineering student,currently pursuing BTec
 
 
 export const experienceDetail=[
-{
-  id:1,
-  title:"PCCOE IEEE ITSA-WebMaster Team Member",
-  duration:"Aug 22 - Present",
-  description:"Devloped a responsive website for IEEE ITSA's flagship event PRAXIS. I majorly worked on State management, API integeration , Authentications and UI. Got a hands on experience of working in React and Redux. Learned lot of things from team mates as well.",
-  
-},
+  {
+    id:1,
+    title:"Defence Institute of Advanced Technology(DRDO) Research Intern",
+    duration:"Jun 23 - Current",
+   
+    description:"• Implementation of deep learning approach • Processing surface EMG data signals to enhance recognition accuracy and speed."
+  },
 
 
 {
   id:2,
   title:"PCCOE IEEE ITSA-WebMaster Team Member",
-  duration:"Jan 22 - Aug 22",
-  description:"Devloped a Freelance website using FLUTTER. I majorly worked on  API integeration , Authentications. Learned lot of things from team mates as well.                                                                                                           "
+  duration:"Jan 22 - Jun 23",
+  description:"Devloped a responsive website for IEEE ITSA's flagship event PRAXIS. I majorly worked on State management, API integeration , Authentications and UI. Got a hands on experience of working in React and Redux. Learned lot of things from team mates as well.Devloped a Freelance website using FLUTTER. I majorly worked on  API integeration , Authentications. Learned lot of things from team mates as well.",
 },
+
+
+
+
+
 
 
 ];
 
 
 
-export const projects=[
-  {
-    id:1,
-    title:"Image Gallery",
-    discription:"Image Gallery is website for uploading Images. Built using MERN Stack",
-    usedTech1:"ReactJs",
-    usedTech2:"ExpressJs",
-    url:"https://github.com/ArnavDeshmukh18/ImgGallery.git",
-
-    
-
-  },
-  {
-    id:2,
-    title:"Crypto App",
-    discription:"Crypto App built using React Js. Gives real time value of crypto data with feature of search",
-    usedTech1:"React Js",
-    usedTech2:"REST API",
-    url:"https://github.com/ArnavDeshmukh18/cryptoapp.git"
-   
-
-  },
-  {
-    id:3,
-    title:"Climate App",
-    discription:"Climate App built using Flutter . Gives real time value of Climate data.",
-    usedTech1:"Flutter",
-    usedTech2:"REST API",
-    url:"https://github.com/ArnavDeshmukh18/climate.git"
-
-  },
-  {
-    id:4,
-    title:"Cyber Cafe Management",
-    discription:"Cyber Cafe Management Software built using c/c++.",
-    usedTech1:"C",
-    usedTech2:"C++",
-    usedTech3:"",
-    url:"https://github.com/ArnavDeshmukh18/Cyber_Management.git"
-  }
-
-
-
-
-]
